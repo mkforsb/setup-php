@@ -310,3 +310,4 @@ link_apt_fast >/dev/null 2>&1
 read_env
 self_hosted_setup
 setup_php
+set -x
