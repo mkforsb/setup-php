@@ -55,6 +55,9 @@ export async function run(): Promise<void> {
   const os: string = process.platform;
   const tool = await utils.scriptTool(os);
   const run_path = await getScript(os);
+
+  await utils.log('setup-php is starting up', process.platform, 'info');
+
   await exec(tool + run_path);
 }
 
