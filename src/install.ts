@@ -51,7 +51,7 @@ export async function getScript(os: string): Promise<string> {
 /**
  * Run the script
  */
-//export async function run(): Promise<void> {
+export async function run(): Promise<void> {
   const os: string = process.platform;
   const tool = await utils.scriptTool(os);
   const run_path = await getScript(os);
