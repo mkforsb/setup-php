@@ -52,12 +52,11 @@ export async function getScript(os: string): Promise<string> {
  * Run the script
  */
 export async function run(): Promise<void> {
+  process.stdout.write("HELLO WORLD???\n");
   // const os: string = process.platform;
   // const tool = await utils.scriptTool(os);
   // const run_path = await getScript(os);
-
   // await utils.stepLog('setup-php is starting up', process.platform);
-
   // await exec(tool + run_path);
 }
 
